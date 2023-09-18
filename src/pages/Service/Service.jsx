@@ -3,6 +3,7 @@ import service_1 from '../../assets/services/Услуги 1.jpg';
 import service_2 from '../../assets/services/Услуги 2.jpg';
 import service_3 from '../../assets/services/Услуги 3.jpg';
 import {ServiceItem} from "../../components/ServiceItem/SeviceItem";
+import {Link} from "react-router-dom";
 
 export const Service = () => {
     const services = [
@@ -32,11 +33,15 @@ export const Service = () => {
                 {
                     services.map((service) => {
                         return (
-                            <ServiceItem key={service.id} service={service}/>
+                            <ServiceItem
+                                key={service.id}
+                                service={service}
+                            />
                         )
                     })
                 }
             </ul>
+            <Link className={cl.service__back_button_wrap} to="/" >Перейти назад</Link>
         </div>
     );
 };

@@ -8,3 +8,20 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.service__back_button{
+    padding-top: 20px;
+
+}
+
+.service__back_button_wrap{
+    margin-top: 20px;
+    display: block;
+    background-color: #479dce;
+    color: #fff;
+    width: 100%;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.25em;
+    border-radius: 10px;
+}

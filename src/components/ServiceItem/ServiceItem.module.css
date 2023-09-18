@@ -21,3 +21,7 @@
 .service_item > h4{
     max-width: 70%;
 }
+
+.active{
+    border: 1px solid #479dce;
+}
