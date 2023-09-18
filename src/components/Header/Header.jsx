@@ -27,6 +27,10 @@ export const Header = () => {
                     <p className={cl.header__img}>Выберите мастера</p> : null
             }
             {
+                location.pathname === '/profile' ?
+                    <p className={cl.header__img}>Ваши данные</p> : null
+            }
+            {
                 location.pathname === '/date' ?
                     <p className={cl.header__img}>Выберите дату и время</p> : null
             }

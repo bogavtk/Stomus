@@ -1,0 +1,58 @@
+/* Profile.module.css */
+.profile {
+    padding: 20px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.profile h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.profile > h4 {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.profile__username{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.mobileTable {
+    overflow-x: auto;
+}
+
+.visitsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+    padding-bottom: 20px;
+}
+
+.visitsTable th,
+.visitsTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.visitsTable th {
+    background-color: #479dce;
+    font-weight: 500;
+    color: #fff;
+}
