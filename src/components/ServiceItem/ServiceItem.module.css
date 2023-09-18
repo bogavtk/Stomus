@@ -1,0 +1,23 @@
+.service_item{
+    cursor: pointer;
+    position: relative;
+    padding: 15px 20px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.service_item > img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.service_item > h4{
+    max-width: 70%;
+}

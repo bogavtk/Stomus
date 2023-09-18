@@ -1,0 +1,48 @@
+.addresses{
+
+}
+
+.address,
+.address__confirm_button{
+    margin-top: 20px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address_text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.address_text > p:first-child{
+    font-size: 1.25em;
+}
+
+.active{
+    border: 1px solid #479dce;
+}
+
+.address_text > p:last-child{
+    color: #989898;
+}
+
+.address__confirm_button{
+    background-color: #fff;
+    width: 100%;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.focused{
+
+}

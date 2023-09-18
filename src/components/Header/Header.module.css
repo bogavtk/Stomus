@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+}
+
+.header__img{
+    width: 150px;
+    padding: 20px 0px;
+    white-space: nowrap;
+}
+
+
+.header__back{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}

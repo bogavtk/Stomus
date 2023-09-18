@@ -1,0 +1,53 @@
+.book > h4{
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.book > p{
+    font-size: 1em;
+    color: #989898;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.book__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.book__form_input,
+.button_submit{
+    padding: 15px 20px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    border-radius: 10px;
+}
+
+.book__form_input {
+    border: none;
+    font-size: 1.125em;
+    color: rgb(0, 0, 0, 0.8);
+    font-weight: 500;
+}
+
+.book__form_input::placeholder{
+    color: rgb(0, 0, 0, 0.3);
+    font-size: 0.9em;
+}
+
+.reqError{
+    color: #a42c2c!important;
+    font-weight: 500;
+}
+
+.button_submit{
+    margin-top: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #479dce;
+}

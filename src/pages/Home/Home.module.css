@@ -1,0 +1,41 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home__action > img,
+.home__points,
+.home__book_button{
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    border-radius: 5px;
+}
+
+.home__action img{
+    width: 100%;
+}
+
+.home__points{
+    background-color: #489ed0;
+    padding: 10px;
+    color: #fff;
+}
+
+.home__points p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.125em;
+}
+
+.home__book_button{
+    background-color: #479dce;
+    padding: 15px 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
