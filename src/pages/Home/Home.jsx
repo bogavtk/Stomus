@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 
 export const Home = () => {
     const myPoints = 1000;
-
+    //переделываем под PROSugar
     return (
         <div className={cl.home}>
             <section className={cl.home__action}>
