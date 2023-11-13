@@ -36,6 +36,7 @@ export const Service = () => {
                             <ServiceItem
                                 key={service.id}
                                 service={service}
+
                             />
                         )
                     })
