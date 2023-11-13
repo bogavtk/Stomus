@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import cl from './ServiceItem.module.css';
 import classNames from "classnames";
+import service_1 from '../../assets/services/услуга1.png';
+import {ChooseButton} from "../ChooseButton/ChooseButton";
+import {Link} from "react-router-dom";
 
-export const ServiceItem = ({ service }) => {
+export const ServiceItem = ({service}) => {
     const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
@@ -34,27 +37,34 @@ export const ServiceItem = ({ service }) => {
             const storedServices = JSON.parse(storedServicesJSON) || [];
             const updatedServices = [
                 ...storedServices,
-                { service: service.id, title: service.title, price: service.price },
+                {service: service.id, title: service.title, price: service.price},
             ];
             localStorage.setItem('servicesList', JSON.stringify(updatedServices));
         }
     };
 
-    const backgroundStyle = {
-        backgroundImage: `url('${service.img}')`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: '90% 50%',
-    };
+    // const backgroundStyle = {
+    //     backgroundImage: `url('${service.img}')`,
+    //     backgroundSize: 'cover',
+    //     backgroundRepeat: 'no-repeat',
+    //     backgroundPosition: '90% 50%',
+    // };
 
     return (
         <section
-            style={backgroundStyle}
-            className={classNames(cl.service_item, {[cl.active]: isActive})}
-            onClick={handleCardClick}
+            className={cl.service_item}
         >
-            <h4>{service.title}</h4>
-            <p>{service.price}</p>
+            <img src={service.img} className={cl.imgService}/>
+            <div className={cl.wrapp}>
+                <span className={cl.title}>{service.title}</span>
+                <div className={cl.buttonLink}>
+                    <Link to={service.link}>
+                        <span className={cl.textLink}>
+                            Перейти
+                        </span>
+                    </Link>
+                </div>
+            </div>
         </section>
     );
 };

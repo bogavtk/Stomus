@@ -1,3 +1,8 @@
+.mainBlock {
+    display: flex;
+
+}
+
 .master_item{
     background-color: #fff;
     -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
@@ -5,6 +10,11 @@
     box-shadow: 3px 3px 10px 3px #dddddd;
     padding: 20px 10px;
     border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .master_item__title{
@@ -14,8 +24,8 @@
 }
 
 .master_item__img{
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
 }
 
@@ -25,24 +35,25 @@
     gap: 3px;
 }
 
-.master_item__info p:first-child{
-    font-size: 0.7em;
-}
+/*.master_item__info p:first-child{*/
+/*    font-size: 0.7em;*/
+/*}*/
 
-.master_item__info p{
-    font-size: 0.85em;
-    color: #989898;
-}
+/*.master_item__info p{*/
+/*    font-size: 0.85em;*/
+/*    color: #989898;*/
+/*}*/
 
-.master_item > p{
-    font-size: 0.85em;
-    color: #989898;
-    padding-top: 20px;
-}
+/*.master_item > p{*/
+/*    font-size: 0.85em;*/
+/*    color: #989898;*/
+/*    padding-top: 20px;*/
+/*}*/
 
-.master_item__info h4{
-    font-weight: 400;
-    font-size: 1.1em;
+.nameMaster{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
 }
 
 .master_item__time{
@@ -57,4 +68,24 @@
     padding: 5px 10px;
     font-size: 0.9em;
     border-radius: 15px;
+}
+
+.detailInfo p {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.open svg {
+    animation: open-button-animate 1s ease alternate;
+    transform: rotate(180deg);
+}
+
+.close svg {
+    animation: close-button-animate 1s ease alternate;
+    transform: rotate(0deg);
+}
+
+.wrappButton {
+    width: 100%;
 }

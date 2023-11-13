@@ -1,5 +1,5 @@
 import cl from './Header.module.css'
-import logoIMG from '../../assets/med.jpg'
+import logoIMG from '../../assets/logoPRO.png'
 import {Link, useLocation} from "react-router-dom";
 import {ArrowBack} from "../../assets/icons/icons";
 
@@ -15,16 +15,16 @@ export const Header = () => {
                     ?
                     <Link className={cl.header__back} to="/"><ArrowBack/></Link>
                     :
-                    null
+                    ''
             }
             {
                 location.pathname === '/' ?
-                    <img src={logoIMG} className={cl.header__img} alt="Логотип Стомус"/> :
+                    <img src={logoIMG} className={cl.header__img} alt="Логотип"/> :
                     null
             }
             {
                 location.pathname === '/master' ?
-                    <p className={cl.header__img}>Выберите мастера</p> : null
+                    <p className={cl.header__img}>Мастера</p> : ''
             }
             {
                 location.pathname === '/profile' ?
@@ -36,7 +36,7 @@ export const Header = () => {
             }
             {
                 location.pathname === '/service' ?
-                    <p className={cl.header__img}>Выберите услугу</p> : null
+                    <p className={cl.header__img}>Услуги</p> : null
             }
             {
                 location.pathname === '/address' ?

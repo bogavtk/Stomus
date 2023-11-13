@@ -1,13 +1,18 @@
 .choose_button{
-    background-color: #fff;
+    background-color: #996C59;
     -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
     -moz-box-shadow: 3px 3px 10px 3px #dddddd;
     box-shadow: 3px 3px 10px 3px #dddddd;
     padding: 15px 30px;
     font-size: 1em;
     color: #000;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+}
+
+.text {
+    color: white;
 }

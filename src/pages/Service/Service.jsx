@@ -1,7 +1,7 @@
 import cl from './Service.module.css';
-import service_1 from '../../assets/services/Услуги 1.jpg';
-import service_2 from '../../assets/services/Услуги 2.jpg';
-import service_3 from '../../assets/services/Услуги 3.jpg';
+import service_1 from '../../assets/services/услуга1.png';
+import service_2 from '../../assets/services/услуга2.png';
+import service_3 from '../../assets/services/услуга3.png';
 import {ServiceItem} from "../../components/ServiceItem/SeviceItem";
 import {Link} from "react-router-dom";
 
@@ -9,21 +9,21 @@ export const Service = () => {
     const services = [
         {
             id: 0,
-            title: "Удлинение коронковой части зуба",
-            price: "5 500 ₽",
+            title: "Все услуги",
             img: service_1,
+            link: '/allService',
         },
         {
             id: 1,
-            title: "Установка 1-го имплантата",
-            price: "8 000 ₽",
+            title: "Акции",
             img: service_2,
+            link: '/ac',
         },
         {
             id: 2,
-            title: "Операция синус-лифтинг (мягкий)",
-            price: "15 000 ₽",
+            title: "Обучение",
             img: service_3,
+            link: '/learn'
         },
     ]
 
@@ -42,7 +42,7 @@ export const Service = () => {
                     })
                 }
             </ul>
-            <Link className={cl.service__back_button_wrap} to="/" >Перейти назад</Link>
+            {/*<Link className={cl.service__back_button_wrap} to="/" >Перейти назад</Link>*/}
         </div>
     );
 };

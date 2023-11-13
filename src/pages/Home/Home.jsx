@@ -11,26 +11,33 @@ export const Home = () => {
     return (
         <div className={cl.home}>
             <section className={cl.home__action}>
-                <img src={action} alt="Наши акции"/>
+
             </section>
-            <section className={cl.home__points}>
-                <p>Мои баллы: <span>{myPoints}</span></p>
-            </section>
-            {localStorage.getItem('chosenMaster') ?
-                <ChooseButton text={`Выбран мастер: ${localStorage.getItem('chosenMaster')}`} href="/master" icon={<MasterIcon/>}/>
-            :
-                <ChooseButton text="Выберите мастера" href="/master" icon={<MasterIcon/>}/>
-            }
+            {/*<section className={cl.home__points}>*/}
+            {/*    <p>Мои баллы: <span>{myPoints}</span></p>*/}
+            {/*</section>*/}
             {
                 localStorage.getItem('currentDay') ?
                     <ChooseButton
                         text={`${localStorage.getItem('currentDay')}  
                         ${localStorage.getItem('currentMonth')} в
                     ${localStorage.getItem('currentTime')}`}
-                                  href="/date"
-                                  icon={<Date/>}/>
+                        href="/date"
+                        icon={<Date/>}/>
                     :
-                    <ChooseButton text="Выберите удобную дату и время" href="/date" icon={<Date/>}/>
+                    <ChooseButton text="Выберете дату" href="/date" icon={<Date/>}/>
+            }
+
+            {   localStorage.getItem('chosenPlace') ?
+                <ChooseButton text={`${localStorage.getItem('chosenPlace')}`} href="/address" icon={<AddressIcon/>} />
+                :
+                <ChooseButton text="Выберите адрес" href="/address" icon={<AddressIcon/>} />
+            }
+
+            {localStorage.getItem('chosenMaster') ?
+                <ChooseButton text={`Выбран мастер: ${localStorage.getItem('chosenMaster')}`} href="/master" icon={<MasterIcon/>}/>
+            :
+                <ChooseButton text="Выберите мастера" href="/master" icon={<MasterIcon/>}/>
             }
 
             {
@@ -43,12 +50,6 @@ export const Home = () => {
                         text="Выберите услугу"
                         href="/service"
                         icon={<Service/>}/>
-            }
-
-            {   localStorage.getItem('chosenPlace') ?
-                <ChooseButton text={`${localStorage.getItem('chosenPlace')}`} href="/address" icon={<AddressIcon/>} />
-                :
-                <ChooseButton text="Выберите адрес" href="/address" icon={<AddressIcon/>} />
             }
 
 
